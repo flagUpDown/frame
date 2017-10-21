@@ -13,10 +13,7 @@ define('CONTROL', HOME.'control/');
 
 //是否开启debug模式
 define('DEBUG', true);
-if(DEBUG)
-	ini_set("display_error", "on");
-else 
-	ini_set("display_error", "Off");
+ini_set("display_errors", DEBUG);
 
 include CORE.'common/function.php';
 include CORE.'C.php';

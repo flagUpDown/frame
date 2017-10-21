@@ -13,7 +13,6 @@ class C
 		$action=$route->action;
 		$ctrlfile=CONTROL.$ctrlClass.'.php';
 		$ctrlClass='control\\'.$ctrlClass;
-		p($ctrlfile);
 		if(is_file($ctrlfile))
 		{
 			include $ctrlfile;
